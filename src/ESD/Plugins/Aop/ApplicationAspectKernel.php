@@ -51,7 +51,7 @@ class ApplicationAspectKernel extends AspectKernel
      * @throws \DI\DependencyException
      * @throws \DI\NotFoundException
      */
-    public function init(array $options = [])
+    public function init(array $options = []): void
     {
         if ($this->wasInitialized) {
             return;
